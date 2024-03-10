@@ -5,6 +5,8 @@ import java.util.Scanner;
  */
 public class Q02_Divisible9 {
 
+    // If sum all digits is div by 9 then it is divisibale by 9
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the Number: ");

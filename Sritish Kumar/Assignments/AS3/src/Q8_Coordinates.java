@@ -9,7 +9,7 @@ public class Q8_Coordinates {
         float x = scan.nextFloat();
         System.out.print("Y: ");
         float y = scan.nextFloat();
-
+        // CHECK ORGIN FIRST
         if (x == 0) {
             System.out.print("Lies on the x axis");
         } else if (y == 0) {

@@ -2,13 +2,14 @@ import java.util.Scanner;
 
 public class Q09_RemovingZero {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the number: ");
         int n = scan.nextInt();
         int n1 = 0;
         int p = 1;
         while (n > 0) {
-            if (n % 10 == 0) {
+            if (n % 10 == 0) { // IF ZERO DO NOTHING
                 n = n / 10;
                 continue;
             }
