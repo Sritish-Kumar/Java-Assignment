@@ -8,7 +8,7 @@ public class Q04_Gcd {
         System.out.print("Enter Numeber 2: ");
         int n2 = scan.nextInt();
 
-        if (n1 % n2 == 0) {
+        if (n1 % n2 == 0) { // 50%10==0 ---> 10
             System.out.println("GCD: " + n2);
 
         } else if (n2 % n1 == 0) {
