@@ -7,3 +7,5 @@
 . Assignment 5 s <br>
 . Assignment 6 s <br>
 . Assignment 7 s <br>
+
+. MINOR PROJECT <br>
