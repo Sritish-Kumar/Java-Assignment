@@ -1,5 +1,6 @@
 # Sritish
 
+. SEM 01
 . Assignment 1 S <br>
 . Assignment 2 S <br>
 . Assignment 3 S <br>
@@ -9,3 +10,6 @@
 . Assignment 7 s <br>
 
 . MINOR PROJECT <br>
+
+. SEM 02
+. Assignment 1 <br>
