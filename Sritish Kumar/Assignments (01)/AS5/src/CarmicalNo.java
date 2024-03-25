@@ -28,6 +28,7 @@ public class CarmicalNo {
         } else {
             System.out.println("It's Not a Amicable Number");
         }
+        scan.close();
 
     }
 }
