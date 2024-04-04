@@ -33,7 +33,7 @@ public class Q10_SumByCol {
         Scanner scan = new Scanner(System.in);
 
         double[][] arr = new double[3][4];
-
+        System.out.println("Enter the number: ");
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 arr[i][j] = scan.nextDouble();
