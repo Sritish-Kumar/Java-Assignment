@@ -11,5 +11,6 @@
 
 . MINOR PROJECT <br>
 
-. SEM 02
+. SEM 02 <br>
 . Assignment 1 <br>
+. Assignment 2 <br>

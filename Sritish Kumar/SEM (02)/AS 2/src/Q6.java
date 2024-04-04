@@ -1,36 +1,59 @@
-abstract class Test {
-    int n = 10;
+abstract class Marks {
+    float markICP;
+    float markDSA;
+    float percentage;
 
-    void display() {
-        System.out.println("Noraml method");
-    }
-
-    abstract void print();
+    abstract float getPercentage();
 }
 
-class sub extends Test {
+class CSE extends Marks {
+    float algoDesign;
+
+    CSE(float markICP, float markDSA, float algoDesign) {
+        this.markICP = markICP;
+        this.markDSA = markDSA;
+        this.algoDesign = algoDesign;
+
+    }
 
     @Override
-    void print() {
-        System.out.println("Abstract method");
+    float getPercentage() {
+        percentage = ((markICP + markDSA + algoDesign) / 300) * 100;
+        return percentage;
     }
 
-    // void display() {
-    // System.out.println("123");
-    // }
+}
 
-    void show() {
-        System.out.println("show working");
+class NonCSE extends Marks {
+    float enggMechanics;
+
+    NonCSE(float markICP, float markDSA, float enggMechanics) {
+        this.markICP = markICP;
+        this.markDSA = markDSA;
+        this.enggMechanics = enggMechanics;
     }
 
+    @Override
+    float getPercentage() {
+        percentage = ((markICP + markDSA + enggMechanics) / 300) * 100;
+        return percentage;
+
+    }
 }
 
 public class Q6 {
     public static void main(String[] args) {
-        sub t1 = new sub();
-        t1.display();
-        t1.print();
-        t1.show();
-
+        System.out.println("CSE");
+        Marks s1 = new CSE(90, 85, 80);
+        System.out.println("Percentage: " + s1.getPercentage() + "%");
+        System.out.println("NON CSE");
+        Marks s2 = new NonCSE(60, 40, 85);
+        System.out.println("Percentage: " + s2.getPercentage() + "%");
     }
 }
+
+// OUTPUTS ----------------------------------
+// CSE
+// Percentage: 85.0%
+// NON CSE
+// Percentage: 61.666668%

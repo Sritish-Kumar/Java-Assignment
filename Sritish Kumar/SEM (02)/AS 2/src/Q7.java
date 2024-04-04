@@ -16,6 +16,10 @@ class Person implements Test1 {
 
     }
 
+    public Person(String name2, int eid) {
+        // TODO Auto-generated constructor stub
+    }
+
     public void display() {
         System.out.println(name);
 

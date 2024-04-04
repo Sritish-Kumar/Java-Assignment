@@ -71,11 +71,13 @@ public class HM4_2 {
             System.out.println("Enter the matrix 2 ele");
             arr2 = input(arr2.length, arr2[0].length);
             System.out.println();
+            System.out.println("MATRIX 1 ");
             display(arr1);
             System.out.println();
+            System.out.println("MATRIX 2 ");
             display(arr2);
             System.out.println();
-
+            System.out.println("ADDED MATRIX");
             display(addMatrix(arr2, arr1));
 
         } else {
@@ -85,3 +87,28 @@ public class HM4_2 {
 
     }
 }
+
+// OUTPUTS -----------------------------------
+
+// Size of MATRIX 1 :3 3
+// Size of MATRIX 2 :3 3
+// Enter the matrix 1 ele
+
+// 1 2 3 4 5 6 7 8 9
+// Enter the matrix 2 ele
+// 9 8 7 6 5 4 3 2 1
+
+// MATRIX 1
+// 1 2 3
+// 4 5 6
+// 7 8 9
+
+// MATRIX 2
+// 9 8 7
+// 6 5 4
+// 3 2 1
+
+// ADDED MATRIX
+// 10 10 10
+// 10 10 10
+// 10 10 10
