@@ -1,0 +1,123 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@google/code-prettify@latest/src/prettify.css"
+  />
+  <style>
+    .question-block {
+      background-color: #333;
+      border: 1px solid #555;
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .answer-block {
+      background-color: #444;
+      border: 1px solid #666;
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .code-block {
+      background-color: #222;
+      border: 1px solid #444;
+      border-radius: 4px;
+      padding: 10px;
+      overflow-x: auto;
+      font-family: "Courier New", Courier, monospace;
+    }
+    .output-block {
+      background-color: #333;
+      border: 1px solid #555;
+      border-radius: 4px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="question-block">
+    <h2>
+      Question : Make a class to store the coordinates of a point and extend it
+      to an Circle class. Create necessary fields and methods to calculate and
+      display the area and perimeter of the cicrlce.
+    </h2>
+    <p>Topics: Inheritence, Classes, Objects and simple maths</p>
+    <div class="answer-block">
+      <pre class="code-block prettyprint lang-java">
+ class PointType {
+     int x;
+     int y;
+ 
+     PointType(int x, int y) {
+         this.x = x;
+         this.y = y;
+ 
+     }
+ 
+     void show() {
+         System.out.println("(" + x + "," + y + ")");
+     }
+ 
+     int getX() {
+         return x;
+     }
+ 
+     int getY() {
+         return y;
+     }
+ }
+ 
+ class CircleType extends PointType {
+     int radius;
+ 
+     CircleType(int radius, int x, int y) {
+         super(x, y);
+         this.radius = radius;
+     }
+ 
+     void show() {
+         System.out.println("Radius: " + radius);
+         System.out.println("Center: " + x + ", " + y);
+         System.out.println("Area: " + getArea());
+         System.out.println("Perimeter: " + getPerimeter());
+     }
+ 
+     float getArea() {
+         float area = (float) (Math.PI * Math.pow(radius, 2));
+         return area;
+     }
+ 
+     float getPerimeter() {
+         float peri = (float) Math.PI * 2 * radius;
+         return peri;
+     }
+ 
+ }
+ 
+ public class HM5 {
+     public static void main(String[] args) {
+         CircleType c = new CircleType(4, 2, 3);
+         c.show();
+         System.out.println();
+ 
+     }
+ }
+ 
+         </pre
+      >
+      <p>OUTPUT:</p>
+      <div class="output-block">
+        <p>
+          Radius: 4 <br />
+          Center: 2, 3<br />
+          Area: 50.265484<br />
+          Perimeter: 25.132742
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@google/code-prettify@latest/loader/run_prettify.js"></script>
+</body>

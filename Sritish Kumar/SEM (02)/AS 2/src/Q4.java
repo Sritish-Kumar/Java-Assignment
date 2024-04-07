@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 class Deposit {
     long principal;
     int time;
@@ -7,14 +5,10 @@ class Deposit {
     double totalAmt;
 
     Deposit() {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Princiapl : ");
-        principal = scan.nextLong();
-        System.out.print("Time: ");
-        time = scan.nextInt();
-        System.out.println("Rate: ");
-        rate = scan.nextDouble();
-        scan.close();
+        // Default values
+        this.principal = 10000;
+        this.time = 5;
+        this.rate = 3.4;
     }
 
     Deposit(long principal, int time, double rate) {
@@ -62,3 +56,10 @@ public class Q4 {
 
     }
 }
+
+// OUTPUT
+
+// Principal: 100000
+// Rate: 5.0
+// Time: 24
+// Total Amount: 220000.0
