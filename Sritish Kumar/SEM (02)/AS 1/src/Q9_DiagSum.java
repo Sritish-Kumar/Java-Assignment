@@ -22,7 +22,7 @@ public class Q9_DiagSum {
     static void display(double[][] arr) {
         for (double[] ds : arr) {
             for (double ds2 : ds) {
-                System.out.println(ds2 + " ");
+                System.out.print(ds2 + " ");
 
             }
             System.out.println();

@@ -10,7 +10,7 @@ class Bank {
     }
 
     void setAmount(long amt) {
-        if (amt < 300) {
+        if (amt < 1000) {
             System.out.println("!!! Minimum Deposit in " + bankName + " is 1000 !!!");
             System.out.println("!!! Desposit Amount set to 1000 ");
             amt = 1000;
@@ -63,6 +63,7 @@ public class HM3 {
         System.out.println("Total Deposit in all Banks: " + Bank.totalAmount);
         System.out.println("Minimum deposit is ");
         b[0].getMin(b).showData();
+        scan.close();
 
     }
 

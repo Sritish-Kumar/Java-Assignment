@@ -48,8 +48,7 @@ public class Q7_Occurence {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        scan.close();
-
+        System.out.println("Enter size of array: ");
         int size = scan.nextInt();
         int[] arr = new int[size];
         for (int i = 0; i < size; i++) {

@@ -22,8 +22,7 @@ class Person2 implements Test1 {
     }
 
     public void count() {
-        char[] arr = name.toCharArray();
-        maxcount = arr.length;
+        maxcount = name.length();
     }
 
 }
